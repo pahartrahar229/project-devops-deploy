@@ -1,3 +1,5 @@
+[![CI](https://github.com/pahartrahar229/project-devops-deploy/actions/workflows/ci.yml/badge.svg)](https://github.com/pahartrahar229/project-devops-deploy/actions/workflows/ci.yml)
+
 ## DevOps: Docker-образ
 
 Этот форк содержит Dockerfile для сборки приложения "Доска объявлений" в единый минимальный production-образ (multi-stage build: сборка фронтенда → сборка backend jar → рантайм на JRE).

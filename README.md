@@ -1,3 +1,19 @@
+## DevOps: Docker-образ
+
+Этот форк содержит Dockerfile для сборки приложения "Доска объявлений" в единый минимальный production-образ (multi-stage build: сборка фронтенда → сборка backend jar → рантайм на JRE).
+
+### Сборка и запуск локально
+
+```bash
+make docker-build
+make docker-run
+```
+
+Приложение будет доступно на `http://localhost:8080`, Swagger UI — `http://localhost:8080/swagger-ui/index.html`, метрики Actuator — на порту `9090`.
+
+Образ публикуется в GitHub Container Registry:
+`ghcr.io/<твой-логин>/project-devops-deploy:latest`
+
 # Project DevOps Deploy
 
 Bulletin board service.
